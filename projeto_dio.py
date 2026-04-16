@@ -19,27 +19,19 @@ while true:
     print ("3 - Multiplicação")
     print ("4 - Divisão")
 
-    
-    
-           
-           
-           )
-op = (input("Escolha uma operação"))
+    op = input("Escolha:")
 
-if op == "1":
-    resultado = num_1 + num_2
-elif op == "2":d
-    resultado = num_1 - num_2
-elif op == "3":
-    resultado = num_1 * num_2
-elif op == "4":
-    if num_2 !=0:
-        resultado = num_1 / num_2
-    else:
-        resultado = "erro: divisão por zero"
-else: 
-    resultado = "operação invalida"
+    if op not in ["1", "2", "3", "4"]:
+           print("Opção inválida:") 
+           continue  
+
+try: 
+    num1 = float(input("Número 1: "))
+    num2 = float(input("Número 2: "))
+except ValueError:
+    print("Entrada inválida!")
     
-print(f"\nResultado: {resultado}")
+
+  
     
 
