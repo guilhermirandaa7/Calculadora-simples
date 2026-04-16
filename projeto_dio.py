@@ -1,19 +1,19 @@
-print("===calculador===")
-
-num_1 = float(input("Qual o primeiro número?"))
-num_2 = float(input("Qual o segundo número?"))
-
-print("/n Escolha a operação:")
-print("1 - soma(+)")
-print("2 - subtração (-)")
-print("3 - multiplicação(*)")
-print("4 - divisão(/)")
+def soma(a, b):
+    return a + b 
+def subtracao(a, b): 
+    return a - b
+def multiplicacao(a,b):
+    return a * b
+def divisão(a, b):
+    if b==0:
+        return 'erro: divisão por zero' 
+    return a / b 
 
 op = (input("Escolha uma operação"))
 
 if op == "1":
     resultado = num_1 + num_2
-elif op == "2":
+elif op == "2":d
     resultado = num_1 - num_2
 elif op == "3":
     resultado = num_1 * num_2
